@@ -89,6 +89,17 @@ img{display:block;max-width:100%}
 .cta-sec .btn{margin-top:6vh}
 .note{margin-top:32px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:#6b655c}
 
+/* coming soon */
+.soon{display:inline-flex;align-items:center;gap:12px;padding:18px 36px;border:2px dashed rgba(216,166,58,.75);border-radius:999px;
+  font-family:var(--gothic);font-weight:900;font-size:clamp(14px,2vw,20px);letter-spacing:.06em;color:var(--gold)}
+.soon i{width:10px;height:10px;border-radius:50%;background:var(--gold);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(.7)}}
+.soon-note{margin:16px 0 0;font-size:clamp(11px,1.5vw,13px);letter-spacing:.06em;color:var(--dim);line-height:1.9}
+.btn-soon{background:none;color:#a8310f;border:2px dashed rgba(168,49,15,.6);box-shadow:none;cursor:default;display:inline-flex;align-items:center;gap:12px}
+.btn-soon:hover{transform:none;box-shadow:none}
+.btn-soon::after{display:none}
+.btn-soon i{width:10px;height:10px;border-radius:50%;background:#a8310f;animation:pulse 1.6s ease-in-out infinite}
+
 footer{background:var(--ink);text-align:center;padding:8vh 6vw;font-size:13px;letter-spacing:.12em;color:var(--dim);line-height:2}
 footer a{border-bottom:1px solid rgba(216,166,58,.6);padding-bottom:3px;color:var(--cream)}
 footer .fl{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:24px}
@@ -121,7 +132,10 @@ footer .fl{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-to
       <img class="art" src="img/hero-2026.jpg" alt="巨大な石棒のまわりに集まる、縄文人から現代の子どもたちまでの人びとのイラスト" />
       <div class="copy">
         <p class="sub">縄文人は、ただ石を削っていた。<br />理由はわからない。それでも、削り続けた。<br />これを愛と呼ばずに、なんと呼ぶ。</p>
-        <div class="fv-cta"><a class="btn" href="https://peatix.com/group/7178801?lang=ja-jp">11月の石棒を見る</a></div>
+        <div class="fv-cta">
+          <span class="soon"><i></i>企画は準備中です</span>
+          <p class="soon-note">申し込みページ（Peatix）は、公開までもう少しお待ちください。</p>
+        </div>
       </div>
     </div>
   </div>
@@ -134,8 +148,8 @@ footer .fl{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-to
 <section class="cta-sec">
   <div class="eyebrow">JOIN US</div>
   <h2>愛のある1か月に、<br />参加しませんか。</h2>
-  <p>企画の詳細と申し込みはPeatixから。</p>
-  <a class="btn" href="https://peatix.com/group/7178801?lang=ja-jp">Peatixで企画を見る</a>
+  <p>企画の詳細と申し込みはPeatixから。ただいま準備中です。</p>
+  <span class="btn btn-soon"><i></i>Peatixリンク準備中</span>
   <div class="note">SEKIBO ENHANCEMENT MONTH 2026</div>
 </section>
 
